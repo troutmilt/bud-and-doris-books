@@ -1,0 +1,17 @@
+;; Bud and Doris Farms — books of account
+;; Washington State DBA sole proprietorship. Federal return: Schedule F (Form 1040).
+;;
+;; Check:   bean-check main.beancount
+;; Browse:  fava main.beancount        (then open http://localhost:5000)
+;; Taxes:   python scripts/schedule_f.py main.beancount 2026
+
+option "title" "Bud and Doris Farms"
+option "operating_currency" "USD"
+option "booking_method" "STRICT"
+
+;; No auto_accounts plugin on purpose: a typo'd account name must fail the check
+;; instead of silently creating a new account.
+
+include "ledger/accounts.beancount"
+include "ledger/opening-balances.beancount"
+include "ledger/2026.beancount"

@@ -1,0 +1,4 @@
+SELECT year, month, account, sum(position) AS total
+WHERE account ~ '^Expenses:' AND year = 2026
+GROUP BY year, month, account
+ORDER BY year, month, account

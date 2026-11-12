@@ -1,0 +1,122 @@
+;; Chart of accounts
+;;
+;; Every Income/Expenses account carries `schedf:` metadata naming the
+;; Schedule F (Form 1040) line it rolls up to. scripts/schedule_f.py reads it.
+;; Line numbers follow the current Schedule F; re-check them each tax year.
+;;
+;; Accounts are opened 2020-01-01 so older GnuCash history can be imported later.
+
+;; ---------------------------------------------------------------- Assets
+;; TODO: rename these to match your real bank and cards
+2020-01-01 open Assets:Bank:Checking                         USD
+  description: "Farm checking account (rename to your bank)"
+2020-01-01 open Assets:Cash                                  USD
+  description: "Cash box: farm stand, market sales"
+
+;; Long-lived things. Ask a tax pro about depreciation; see CLAUDE.md "Capital items".
+2020-01-01 open Assets:Farm:Equipment                        USD
+  description: "Tools/equipment over the de minimis limit, at cost"
+2020-01-01 open Assets:Farm:Orchard:Apricot                  USD
+  description: "Capitalized cost of apricot trees"
+2020-01-01 open Assets:Farm:Orchard:Plum                     USD
+  description: "Capitalized cost of young plum trees (not yet bearing)"
+2020-01-01 open Assets:Farm:Orchard:Haskap                   USD
+  description: "Capitalized cost of haskap planting (trial)"
+2020-01-01 open Assets:Farm:Irrigation                       USD
+  description: "Irrigation system, at cost"
+
+;; ----------------------------------------------------------- Liabilities
+2020-01-01 open Liabilities:CreditCard:Farm                  USD
+  description: "Card used for farm purchases (rename to your card)"
+
+;; ---------------------------------------------------------------- Equity
+2020-01-01 open Equity:Opening-Balances                      USD
+2020-01-01 open Equity:Owner:Contributions                   USD
+  description: "Personal money/cards used to pay farm costs"
+2020-01-01 open Equity:Owner:Draws                           USD
+  description: "Farm money taken for personal use"
+
+;; ---------------------------------------------------------------- Income
+2020-01-01 open Income:Farm:Sales:Apricots                   USD
+  schedf: "1a"
+  description: "Sales of apricots you raised"
+2020-01-01 open Income:Farm:Sales:Plums                      USD
+  schedf: "1a"
+2020-01-01 open Income:Farm:Sales:Haskap                     USD
+  schedf: "1a"
+2020-01-01 open Income:Farm:Ag-Program-Payments              USD
+  schedf: "4a"
+  description: "USDA/ag program payments"
+2020-01-01 open Income:Farm:Crop-Insurance                   USD
+  schedf: "6a"
+2020-01-01 open Income:Farm:Other                            USD
+  schedf: "8"
+  description: "Other farm income (fuel tax credit refunds, etc.)"
+
+;; -------------------------------------------------------------- Expenses
+2020-01-01 open Expenses:Farm:Car-Truck                      USD
+  schedf: "10"
+  description: "Farm vehicle use: actual costs or standard-mileage amount"
+2020-01-01 open Expenses:Farm:Chemicals                      USD
+  schedf: "11"
+  description: "Sprays, fungicides, herbicides, dormant oil"
+2020-01-01 open Expenses:Farm:Conservation                   USD
+  schedf: "12"
+2020-01-01 open Expenses:Farm:Custom-Hire                    USD
+  schedf: "13"
+  description: "Hired machine work (custom mowing, tilling, spraying)"
+2020-01-01 open Expenses:Farm:Depreciation                   USD
+  schedf: "14"
+  description: "Usually entered once a year from Form 4562"
+2020-01-01 open Expenses:Farm:Fertilizer-Lime                USD
+  schedf: "17"
+  description: "Fertilizer, lime, compost, mulch used as soil amendment"
+2020-01-01 open Expenses:Farm:Freight-Trucking               USD
+  schedf: "18"
+2020-01-01 open Expenses:Farm:Fuel                           USD
+  schedf: "19"
+  description: "Gasoline, diesel, oil for farm equipment"
+2020-01-01 open Expenses:Farm:Insurance                      USD
+  schedf: "20"
+  description: "Farm insurance other than health"
+2020-01-01 open Expenses:Farm:Interest                       USD
+  schedf: "21b"
+2020-01-01 open Expenses:Farm:Labor                          USD
+  schedf: "22"
+  description: "Hired help (picking, pruning)"
+2020-01-01 open Expenses:Farm:Rent-Equipment                 USD
+  schedf: "24a"
+  description: "Rented vehicles, machinery, equipment"
+2020-01-01 open Expenses:Farm:Rent-Land                      USD
+  schedf: "24b"
+2020-01-01 open Expenses:Farm:Repairs                        USD
+  schedf: "25"
+  description: "Repairs and maintenance of equipment, fences, irrigation"
+2020-01-01 open Expenses:Farm:Seeds-Plants                   USD
+  schedf: "26"
+  description: "Seeds and plants (NOT fruit trees still growing; see CLAUDE.md)"
+2020-01-01 open Expenses:Farm:Storage                        USD
+  schedf: "27"
+2020-01-01 open Expenses:Farm:Supplies                       USD
+  schedf: "28"
+  description: "Small tools, picking bins, tree guards, stakes, drip parts, boxes"
+2020-01-01 open Expenses:Farm:Taxes                          USD
+  schedf: "29"
+  description: "Property tax on farm land, WA B&O tax, licenses"
+2020-01-01 open Expenses:Farm:Utilities                      USD
+  schedf: "30"
+  description: "Irrigation water, electricity for the farm"
+2020-01-01 open Expenses:Farm:Other:Marketing                USD
+  schedf: "32"
+  description: "Farmers market fees, signs, ads"
+2020-01-01 open Expenses:Farm:Other:Education                USD
+  schedf: "32"
+  description: "Extension classes, books, ag association dues"
+2020-01-01 open Expenses:Farm:Other:Bank-Fees                USD
+  schedf: "32"
+2020-01-01 open Expenses:Farm:Other:Software                 USD
+  schedf: "32"
+
+;; Holding pen for things not yet classified. Must be empty at year-end.
+2020-01-01 open Expenses:Uncategorized                       USD
+  schedf: "REVIEW"

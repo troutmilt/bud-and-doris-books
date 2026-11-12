@@ -1,0 +1,11 @@
+;; 2026 transactions — keep in date order.
+;;
+;; Entry format (see CLAUDE.md for the full workflow):
+;;
+;; 2026-04-12 * "Vendor" "What it was"
+;;   receipt: "receipts/2026/2026-04-12-vendor-87.96.jpg"
+;;   Expenses:Farm:Supplies                 87.96 USD
+;;   Liabilities:CreditCard:Farm
+;;
+;; Paid with a personal card or cash? Credit Equity:Owner:Contributions instead.
+;; Use flag ! instead of * for anything that needs a second look.
