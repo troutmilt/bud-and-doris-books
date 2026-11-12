@@ -9,6 +9,10 @@ option "title" "Bud and Doris Farms"
 option "operating_currency" "USD"
 option "booking_method" "STRICT"
 
+;; Fava display: show income, profit and loan balances as positive numbers.
+;; (Only the display changes; the ledger still records income as negative.)
+2020-01-01 custom "fava-option" "invert-income-liabilities-equity" "true"
+
 ;; No auto_accounts plugin on purpose: a typo'd account name must fail the check
 ;; instead of silently creating a new account.
 
