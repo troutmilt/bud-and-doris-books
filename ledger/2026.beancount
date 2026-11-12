@@ -85,10 +85,10 @@
   Expenses:Farm:Supplies                    62.02 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
-2026-05-25 ! "Lowe's" "Toro lawn mower"
+2026-05-25 * "Lowe's" "Toro lawn mower"
   invoice: "453800570"
-  note: "Under $2,500 de minimis; confirm farm-only use and expensing with preparer"
-  Expenses:Farm:Supplies                   478.03 USD
+  note: "Mixed use: 75% farm by acreage mowed; total 478.03, personal 25% (119.51) not recorded"
+  Expenses:Farm:Supplies                   358.52 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
 2026-06-13 * "Stan's Merry Mart" "Irrigation parts"
