@@ -65,6 +65,17 @@ pre-productive period costs for crops that take more than 2 years to bear.)
 - Tell the owner to confirm the treatment with a tax preparer. Don't give
   confident tax conclusions on these.
 
+## Projects
+
+Tag every posting that belongs to a multi-receipt project with posting metadata
+`project: "<name>"`, so the preparer can see the project's full cost and decide
+whether it is a repair or a capital improvement. Current projects:
+
+- `grandpa-trailer`: rebuilding the owner's grandfather's 1980s trailer,
+  farm use only. A restoration like this may need to be capitalized.
+
+List a project's costs: `bean-query main.beancount "$(cat queries/project-costs.bql)"`
+
 ## Washington State notes
 
 - No state income tax. The **B&O tax** may apply to sales, and farmers selling

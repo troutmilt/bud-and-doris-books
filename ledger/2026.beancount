@@ -96,6 +96,13 @@
   Expenses:Farm:Supplies                    89.22 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
+2026-07-16 * "Stan's Merry Mart" "Peat moss x4 (soil improvement); spray paint (trailer rebuild)"
+  receipt: "receipts/2026/2026-07-16-stans-merry-mart-151.46.jpg"
+  Expenses:Farm:Fertilizer-Lime            143.84 USD
+  Expenses:Farm:Repairs                      7.62 USD
+    project: "grandpa-trailer"
+  Equity:Owner:Contributions:Personal-Credit-Card
+
 2026-07-22 * "Coastal Farm & Ranch" "Tomato cages, CoFlex wrap, utility knife blades"
   receipt: "receipts/2026/2026-07-22-coastal-39.30.jpg"
   note: "Same photo shows 2026-08-17 Coastal boots receipt (personal, not recorded)"

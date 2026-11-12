@@ -1,0 +1,3 @@
+SELECT str(meta('project')) AS project, date, payee, account, position
+WHERE meta('project') IS NOT NULL
+ORDER BY project, date
