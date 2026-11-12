@@ -9,7 +9,7 @@
 ;; ---------------------------------------------------------------- Assets
 ;; The business debit card draws from this account, so card swipes post here.
 2020-01-01 open Assets:Bank:CVB-Business-Checking            USD
-  description: "Cashmere Valley Bank business checking (business debit card)"
+  description: "Cashmere Valley Bank business checking (business debit card ending 1856)"
 2020-01-01 open Assets:Cash                                  USD
   description: "Cash box: farm stand, market sales"
 
@@ -35,9 +35,9 @@
 ;; cost, the farm received money from the owner: credit the sub-account for the
 ;; card that paid, so there's a trail back to the personal statement.
 2020-01-01 open Equity:Owner:Contributions:CVB-Personal-Debit   USD
-  description: "Farm costs paid with Cashmere Valley Bank personal debit card"
+  description: "Farm costs paid with CVB personal debit card (Visa ending 9463)"
 2020-01-01 open Equity:Owner:Contributions:Personal-Credit-Card USD
-  description: "Farm costs paid with personal credit card (larger online buys)"
+  description: "Farm costs paid with personal credit card (Mastercard ending 8274)"
 2020-01-01 open Equity:Owner:Contributions:Cash                 USD
   description: "Farm costs paid with personal cash"
 2020-01-01 open Equity:Owner:Contributions:Transfers            USD

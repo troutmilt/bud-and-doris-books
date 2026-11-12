@@ -96,6 +96,12 @@
   Expenses:Farm:Supplies                    89.22 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
+2026-07-22 * "Coastal Farm & Ranch" "Tomato cages, CoFlex wrap, utility knife blades"
+  receipt: "receipts/2026/2026-07-22-coastal-39.30.jpg"
+  note: "Same photo shows 2026-08-17 Coastal boots receipt (personal, not recorded)"
+  Expenses:Farm:Supplies                    39.30 USD
+  Equity:Owner:Contributions:Personal-Credit-Card
+
 2026-08-27 * "Walter Orchards" "Apricots, wholesale"
   channel: "wholesale"
   Assets:Bank:CVB-Business-Checking       5000.00 USD
