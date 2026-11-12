@@ -7,9 +7,9 @@
 ;; Accounts are opened 2020-01-01 so older GnuCash history can be imported later.
 
 ;; ---------------------------------------------------------------- Assets
-;; TODO: rename these to match your real bank and cards
-2020-01-01 open Assets:Bank:Checking                         USD
-  description: "Farm checking account (rename to your bank)"
+;; The business debit card draws from this account, so card swipes post here.
+2020-01-01 open Assets:Bank:CVB-Business-Checking            USD
+  description: "Cashmere Valley Bank business checking (business debit card)"
 2020-01-01 open Assets:Cash                                  USD
   description: "Cash box: farm stand, market sales"
 
@@ -25,16 +25,21 @@
 2020-01-01 open Assets:Farm:Irrigation                       USD
   description: "Irrigation system, at cost"
 
-;; ----------------------------------------------------------- Liabilities
-2020-01-01 open Liabilities:CreditCard:Farm                  USD
-  description: "Card used for farm purchases (rename to your card)"
-
 ;; ---------------------------------------------------------------- Equity
 2020-01-01 open Equity:Opening-Balances                      USD
-2020-01-01 open Equity:Owner:Contributions                   USD
-  description: "Personal money/cards used to pay farm costs"
+;; Personal accounts are NOT tracked here. When a personal card pays a farm
+;; cost, the farm received money from the owner: credit the sub-account for the
+;; card that paid, so there's a trail back to the personal statement.
+2020-01-01 open Equity:Owner:Contributions:CVB-Personal-Debit   USD
+  description: "Farm costs paid with Cashmere Valley Bank personal debit card"
+2020-01-01 open Equity:Owner:Contributions:Personal-Credit-Card USD
+  description: "Farm costs paid with personal credit card (larger online buys)"
+2020-01-01 open Equity:Owner:Contributions:Cash                 USD
+  description: "Farm costs paid with personal cash"
+2020-01-01 open Equity:Owner:Contributions:Transfers            USD
+  description: "Money moved from personal accounts into farm checking"
 2020-01-01 open Equity:Owner:Draws                           USD
-  description: "Farm money taken for personal use"
+  description: "Farm money taken for personal use, incl. paying yourself back for personal-card purchases"
 
 ;; ---------------------------------------------------------------- Income
 2020-01-01 open Income:Farm:Sales:Apricots                   USD

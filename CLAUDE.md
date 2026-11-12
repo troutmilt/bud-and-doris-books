@@ -24,8 +24,16 @@ When the owner sends a receipt photo or describes a purchase or sale:
 
 1. **Read it.** Date, vendor, total, tax, and the line items when they matter for
    classification. If anything is unreadable or ambiguous, ask. Never guess an amount.
-2. **Ask how it was paid** if it isn't clear: farm card, farm checking, cash, or
-   personal money. Personal money credits `Equity:Owner:Contributions`.
+2. **Ask how it was paid** if it isn't clear. The owner's payment methods:
+   - **CVB business debit card** (preferred) -> `Assets:Bank:CVB-Business-Checking`
+   - **CVB personal debit card** (used in 2026 while the business card was
+     deactivated) -> `Equity:Owner:Contributions:CVB-Personal-Debit`
+   - **Personal credit card** (occasional larger online buys) ->
+     `Equity:Owner:Contributions:Personal-Credit-Card`
+   - **Personal cash** -> `Equity:Owner:Contributions:Cash`
+   Personal accounts are not tracked in these books. Interest or fees on the
+   personal credit card are not farm expenses. If the farm pays the owner back
+   for personal-card purchases, debit `Equity:Owner:Draws`.
 3. **Classify** using the account descriptions in `ledger/accounts.beancount`.
    Split a receipt across accounts when it mixes categories. If an item is
    personal, leave it out of the farm books and say so.

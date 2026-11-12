@@ -1,12 +1,11 @@
 ;; Opening balances as of the start of 2026.
-;; TODO: fill in from your 2025-12-31 bank/card statements (or GnuCash), then
-;; uncomment. Assets are positive; a credit card balance owed is negative.
+;; TODO: fill in from your 2025-12-31 Cashmere Valley Bank business statement (or GnuCash), then
+;; uncomment. The balance is positive if money is in the account.
 ;;
 ;; 2026-01-01 * "Opening balances"
-;;   Assets:Bank:Checking              0.00 USD
-;;   Liabilities:CreditCard:Farm       0.00 USD
+;;   Assets:Bank:CVB-Business-Checking    0.00 USD
 ;;   Equity:Opening-Balances
 ;;
 ;; Balance assertions catch typos. Add one per statement, dated the day AFTER
 ;; the statement closing date:
-;; 2026-02-01 balance Assets:Bank:Checking   0.00 USD
+;; 2026-02-01 balance Assets:Bank:CVB-Business-Checking   0.00 USD

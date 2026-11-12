@@ -5,7 +5,8 @@
 ;; 2026-04-12 * "Vendor" "What it was"
 ;;   receipt: "receipts/2026/2026-04-12-vendor-87.96.jpg"
 ;;   Expenses:Farm:Supplies                 87.96 USD
-;;   Liabilities:CreditCard:Farm
+;;   Assets:Bank:CVB-Business-Checking
 ;;
-;; Paid with a personal card or cash? Credit Equity:Owner:Contributions instead.
+;; Paid with the personal debit card, personal credit card or personal cash?
+;; Use the matching Equity:Owner:Contributions:<card> account instead.
 ;; Use flag ! instead of * for anything that needs a second look.
