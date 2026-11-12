@@ -13,6 +13,11 @@
   Liabilities:Loan:Kubota                  271.60 USD
   Assets:Bank:CVB-Business-Checking
 
+2026-02-07 * "NAPA Auto Parts" "Light for borrowed trailer, damaged during farm use"
+  source: "Personal checking statement"
+  Expenses:Farm:Repairs                     51.11 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
 2026-02-23 ! "Kubota Credit" "Loan payment"
   note: "Split out interest from Kubota year-end statement"
   Liabilities:Loan:Kubota                  271.60 USD
@@ -22,6 +27,12 @@
   note: "Split out interest from Kubota year-end statement"
   Liabilities:Loan:Kubota                  271.60 USD
   Assets:Bank:CVB-Business-Checking
+
+2026-04-08 ! "Chelan County Treasurer" "Property tax, first half 2026 (check 1143)"
+  source: "Personal checking statement"
+  note: "PLACEHOLDER 25% farm share of 2,274.25; replace with split from assessor's land/improvement values"
+  Expenses:Farm:Taxes                      568.56 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
 
 2026-04-13 * "Pomp's Tire Service" "New tire mounted on Kubota"
   invoice: "1940014315"
@@ -85,6 +96,17 @@
   Expenses:Farm:Supplies                    62.02 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
+2026-05-13 * "Rowe's Tractor" "Repair on old mower"
+  source: "Personal checking statement"
+  note: "Mixed use: 75% farm by acreage mowed; total 72.74"
+  Expenses:Farm:Repairs                     54.56 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-05-22 ! "Kubota Credit" "Loan payment (from personal checking)"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
 2026-05-25 * "Lowe's" "Toro lawn mower"
   invoice: "453800570"
   note: "Mixed use: 75% farm by acreage mowed; total 478.03, personal 25% (119.51) not recorded"
@@ -94,6 +116,11 @@
 2026-06-13 * "Stan's Merry Mart" "Irrigation parts"
   invoice: "A26222"
   Expenses:Farm:Supplies                    89.22 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-06-22 ! "Kubota Credit" "Loan payment (from personal checking)"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
 2026-07-16 * "Stan's Merry Mart" "Peat moss x4 (soil improvement); spray paint (trailer rebuild)"
@@ -109,6 +136,11 @@
   Expenses:Farm:Supplies                    39.30 USD
   Equity:Owner:Contributions:Personal-Credit-Card
 
+2026-07-27 ! "Kubota Credit" "Loan payment (from personal checking)"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
 2026-08-10 * "Harbor Freight" "2in 212cc gas engine pump + 2-yr repair plan (wildfire protection)"
   receipt: "receipts/2026/2026-08-10-harbor-freight-419.63.jpg"
   invoice: "002777871164909"
@@ -116,14 +148,42 @@
   Expenses:Farm:Supplies                   209.82 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
+2026-08-17 * "Valley Tractor" "Excavator rental; 25% for chicken coop site prep"
+  source: "Personal checking statement"
+  note: "Mixed use: 25% farm (coop site), 75% personal (home slope); total 341.09"
+  Expenses:Farm:Rent-Equipment              85.27 USD
+    project: "chicken-coop"
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-08-26 * "CDS Aggregates" "Gravel for farm road and driveway"
+  source: "Personal checking statement"
+  note: "Mixed use: 50% farm road; total 82.54"
+  Expenses:Farm:Repairs                     41.27 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
 2026-08-27 * "Walter Orchards" "Apricots, wholesale"
   channel: "wholesale"
   Assets:Bank:CVB-Business-Checking       5000.00 USD
   Income:Farm:Sales:Apricots
 
+2026-08-27 ! "Kubota Credit" "Loan payment (from personal checking)"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
 2026-09-04 * "Owner" "Cash draw"
   Equity:Owner:Draws                      1300.00 USD
   Assets:Bank:CVB-Business-Checking
+
+2026-09-28 ! "Kubota Credit" "Loan payment (from personal checking)"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-10-26 ! "Kubota Credit" "Loan payment (from personal checking)"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
 
 2026-11-03 * "Owner" "Transfer to personal checking"
   Equity:Owner:Draws                      1500.00 USD

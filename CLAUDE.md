@@ -73,6 +73,8 @@ whether it is a repair or a capital improvement. Current projects:
 
 - `grandpa-trailer`: rebuilding the owner's grandfather's 1980s trailer,
   farm use only. A restoration like this may need to be capitalized.
+- `chicken-coop`: site prep and building for a future chicken coop (farm
+  expansion). Costs toward a new building are usually capitalized.
 
 List a project's costs: `bean-query main.beancount "$(cat queries/project-costs.bql)"`
 
