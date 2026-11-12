@@ -1,11 +1,12 @@
 ;; Opening balances as of the start of 2026.
-;; TODO: fill in from your 2025-12-31 Cashmere Valley Bank business statement (or GnuCash), then
-;; uncomment. The balance is positive if money is in the account.
-;;
-;; 2026-01-01 * "Opening balances"
-;;   Assets:Bank:CVB-Business-Checking    0.00 USD
-;;   Equity:Opening-Balances
-;;
-;; Balance assertions catch typos. Add one per statement, dated the day AFTER
-;; the statement closing date:
-;; 2026-02-01 balance Assets:Bank:CVB-Business-Checking   0.00 USD
+;; Business checking: derived from the 2026-11-12 balance of 2,670.27 minus the
+;; net of 2026 activity on the bank export (+1,228.97).
+2026-01-01 * "Opening balances"
+  Assets:Bank:CVB-Business-Checking    1441.30 USD
+  Equity:Opening-Balances
+
+;; TODO: Kubota loan balance on 2026-01-01, and the cost of the tractor,
+;; mower, snowplow and box blade (from purchase papers or GnuCash).
+
+;; Balance assertion: checks every business-checking entry against the bank.
+2026-11-13 balance Assets:Bank:CVB-Business-Checking   2670.27 USD

@@ -25,6 +25,10 @@
 2020-01-01 open Assets:Farm:Irrigation                       USD
   description: "Irrigation system, at cost"
 
+;; ----------------------------------------------------------- Liabilities
+2020-01-01 open Liabilities:Loan:Kubota                      USD
+  description: "Kubota Credit loan: tractor, mower, snowplow, box blade"
+
 ;; ---------------------------------------------------------------- Equity
 2020-01-01 open Equity:Opening-Balances                      USD
 ;; Personal accounts are NOT tracked here. When a personal card pays a farm

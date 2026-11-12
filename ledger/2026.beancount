@@ -1,12 +1,114 @@
 ;; 2026 transactions — keep in date order.
-;;
-;; Entry format (see CLAUDE.md for the full workflow):
-;;
-;; 2026-04-12 * "Vendor" "What it was"
-;;   receipt: "receipts/2026/2026-04-12-vendor-87.96.jpg"
-;;   Expenses:Farm:Supplies                 87.96 USD
-;;   Assets:Bank:CVB-Business-Checking
-;;
-;; Paid with the personal debit card, personal credit card or personal cash?
-;; Use the matching Equity:Owner:Contributions:<card> account instead.
-;; Use flag ! instead of * for anything that needs a second look.
+;; Business-checking entries come from the CVB export (12/31/2025–11/12/2026).
+;; Personal-debit purchases come from the owner's 2026 spreadsheet, with WA
+;; sales tax folded into each item's cost.
+
+2026-01-07 * "Valley Tractor" "Rear hydraulic repair on tractor"
+  note: "Work done Jan 4; card charge dated Jan 7"
+  Expenses:Farm:Repairs                    434.63 USD
+  Assets:Bank:CVB-Business-Checking
+
+2026-01-20 ! "Kubota Credit" "Loan payment"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Assets:Bank:CVB-Business-Checking
+
+2026-02-23 ! "Kubota Credit" "Loan payment"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Assets:Bank:CVB-Business-Checking
+
+2026-03-30 ! "Kubota Credit" "Loan payment"
+  note: "Split out interest from Kubota year-end statement"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Assets:Bank:CVB-Business-Checking
+
+2026-04-13 * "Pomp's Tire Service" "New tire mounted on Kubota"
+  invoice: "1940014315"
+  Expenses:Farm:Repairs                    208.47 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-16 * "Owner" "Transfer from personal checking"
+  Assets:Bank:CVB-Business-Checking       1000.00 USD
+  Equity:Owner:Contributions:Transfers
+
+2026-04-20 ! "Kubota Credit" "Loan payment"
+  note: "Split out interest from Kubota year-end statement"
+  invoice: "23331825"
+  Liabilities:Loan:Kubota                  271.60 USD
+  Assets:Bank:CVB-Business-Checking
+
+2026-04-24 * "Coastal" "Saw equipment"
+  invoice: "80562201"
+  Expenses:Farm:Supplies                    78.23 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-24 * "Stemilt Organic Compost" "Compost for vegetable crop"
+  invoice: "100190"
+  Expenses:Farm:Fertilizer-Lime            108.40 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-26 * "Lowe's" "Vegetable starts/seeds; irrigation parts (net of a return)"
+  invoice: "898117919"
+  Expenses:Farm:Seeds-Plants                41.84 USD
+  Expenses:Farm:Supplies                    61.20 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-27 * "Save Mart" "Seeds"
+  invoice: "a85096"
+  Expenses:Farm:Seeds-Plants                 5.43 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-27 * "Stan's Merry Mart" "Equipment and irrigation parts; seeds"
+  invoice: "987459"
+  Expenses:Farm:Supplies                   100.03 USD
+  Expenses:Farm:Seeds-Plants                 5.98 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-27 * "The Home Depot" "Equipment"
+  invoice: "5365"
+  Expenses:Farm:Supplies                   173.15 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-28 * "AutoZone" "Equipment parts"
+  invoice: "304096"
+  Expenses:Farm:Supplies                    18.50 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-28 * "Stan's Merry Mart" "Irrigation parts"
+  invoice: "988191"
+  Expenses:Farm:Supplies                    21.69 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-04-29 * "Harbor Freight" "Equipment"
+  invoice: "2740352172042"
+  Expenses:Farm:Supplies                    62.02 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-05-25 ! "Lowe's" "Toro lawn mower"
+  invoice: "453800570"
+  note: "Under $2,500 de minimis; confirm farm-only use and expensing with preparer"
+  Expenses:Farm:Supplies                   478.03 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-06-13 * "Stan's Merry Mart" "Irrigation parts"
+  invoice: "A26222"
+  Expenses:Farm:Supplies                    89.22 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
+2026-08-27 * "Walter Orchards" "Apricots, wholesale"
+  channel: "wholesale"
+  Assets:Bank:CVB-Business-Checking       5000.00 USD
+  Income:Farm:Sales:Apricots
+
+2026-09-04 * "Owner" "Cash draw"
+  Equity:Owner:Draws                      1300.00 USD
+  Assets:Bank:CVB-Business-Checking
+
+2026-11-03 * "Owner" "Transfer to personal checking"
+  Equity:Owner:Draws                      1500.00 USD
+  Assets:Bank:CVB-Business-Checking
+
+2026-11-06 * "Owner" "Cash draw"
+  Equity:Owner:Draws                       450.00 USD
+  Assets:Bank:CVB-Business-Checking
