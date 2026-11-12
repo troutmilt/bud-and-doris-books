@@ -102,6 +102,13 @@
   Expenses:Farm:Supplies                    39.30 USD
   Equity:Owner:Contributions:Personal-Credit-Card
 
+2026-08-10 * "Harbor Freight" "2in 212cc gas engine pump + 2-yr repair plan (wildfire protection)"
+  receipt: "receipts/2026/2026-08-10-harbor-freight-419.63.jpg"
+  invoice: "002777871164909"
+  note: "Mixed use: 50% farm per owner; total 419.63, personal half 209.81 not recorded"
+  Expenses:Farm:Supplies                   209.82 USD
+  Equity:Owner:Contributions:CVB-Personal-Debit
+
 2026-08-27 * "Walter Orchards" "Apricots, wholesale"
   channel: "wholesale"
   Assets:Bank:CVB-Business-Checking       5000.00 USD
