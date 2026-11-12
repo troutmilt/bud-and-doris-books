@@ -9,7 +9,7 @@
 ;; ---------------------------------------------------------------- Assets
 ;; The business debit card draws from this account, so card swipes post here.
 2020-01-01 open Assets:Bank:CVB-Business-Checking            USD
-  description: "Cashmere Valley Bank business checking (business debit card ending 1856)"
+  description: "Cashmere Valley Bank business checking (business debit card ending 5662)"
 2020-01-01 open Assets:Cash                                  USD
   description: "Cash box: farm stand, market sales"
 

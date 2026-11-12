@@ -25,7 +25,7 @@ When the owner sends a receipt photo or describes a purchase or sale:
 1. **Read it.** Date, vendor, total, tax, and the line items when they matter for
    classification. If anything is unreadable or ambiguous, ask. Never guess an amount.
 2. **Ask how it was paid** if it isn't clear. The owner's payment methods:
-   - **CVB business debit card, ending 1856** (preferred) -> `Assets:Bank:CVB-Business-Checking`
+   - **CVB business debit card, ending 5662** (preferred) -> `Assets:Bank:CVB-Business-Checking`
    - **CVB personal debit card, Visa ending 9463** (used in 2026 while the business card was
      deactivated) -> `Equity:Owner:Contributions:CVB-Personal-Debit`
    - **Personal credit card, Mastercard ending 8274** (occasional larger buys) ->
