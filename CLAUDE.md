@@ -87,6 +87,16 @@ List a project's costs: `bean-query main.beancount "$(cat queries/project-costs.
 - A WA **farmer's sales tax exemption certificate** can exempt qualifying
   purchases. Tag such receipts with `wa_exempt: TRUE`.
 
+## Phone dashboard
+
+A private page shows the year's numbers on the owner's phone:
+https://claude.ai/artifact/1vb9FDhHuhH4K6YkdUTQq2 (Artifact type "Data").
+Its data are JSON files made by `scripts/export_dashboard.py`; it does not read
+the repo live. After committing new entries, offer to refresh it: run the export,
+upload each JSON file to the artifact as an asset, point the matching
+`datasets/<id>` document at the new `/_blob/...` url (with `updated` and `edit`
+stamps), and delete the old asset.
+
 ## Rules
 
 - Keep `Expenses:Uncategorized` empty by year-end.
