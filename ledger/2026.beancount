@@ -192,3 +192,10 @@
 2026-11-06 * "Owner" "Cash draw"
   Equity:Owner:Draws                       450.00 USD
   Assets:Bank:CVB-Business-Checking
+
+2026-11-22 * "Ferry St 76" "Diesel 2, 4.997 gal @ 6.499"
+  receipt: "receipts/2026/2026-11-22-ferry-st-76-32.48.jpg"
+  invoice: "131636"
+  gallons: "4.997"
+  Expenses:Farm:Fuel                        32.48 USD
+  Assets:Bank:CVB-Business-Checking
