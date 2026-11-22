@@ -199,3 +199,10 @@
   gallons: "4.997"
   Expenses:Farm:Fuel                        32.48 USD
   Assets:Bank:CVB-Business-Checking
+
+2026-11-22 * "Ferry St 76" "Regular gas, 3.590 gal @ 4.399 (farm equipment)"
+  receipt: "receipts/2026/2026-11-22-ferry-st-76-15.79.jpg"
+  invoice: "132002"
+  gallons: "3.590"
+  Expenses:Farm:Fuel                        15.79 USD
+  Assets:Bank:CVB-Business-Checking
