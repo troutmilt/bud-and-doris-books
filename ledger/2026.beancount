@@ -28,9 +28,9 @@
   Liabilities:Loan:Kubota                  271.60 USD
   Assets:Bank:CVB-Business-Checking
 
-2026-04-08 ! "Chelan County Treasurer" "Property tax, first half 2026 (check 1143)"
+2026-04-08 * "Chelan County Treasurer" "Property tax, first half 2026 (check 1143)"
   source: "Personal checking statement"
-  note: "PLACEHOLDER 25% farm share of 2,274.25; replace with split from assessor's land/improvement values"
+  note: "25% farm share of 2,274.25 (owner's split for all of 2026)"
   Expenses:Farm:Taxes                      568.56 USD
   Equity:Owner:Contributions:CVB-Personal-Debit
 
@@ -206,3 +206,12 @@
   gallons: "3.590"
   Expenses:Farm:Fuel                        15.79 USD
   Assets:Bank:CVB-Business-Checking
+
+2026-11-24 * "Chelan County Treasurer" "Property tax, second half 2026 (Property ID 19521)"
+  receipt: "Payment confirmation PDF kept by owner"
+  confirmation: "208596513"
+  note: "25% farm share of 2,296.20 tax + 3.95 fee (owner's split for all of 2026)"
+  Expenses:Farm:Taxes                      574.05 USD
+  Expenses:Farm:Other:Bank-Fees              0.99 USD
+  Equity:Owner:Draws                      1725.11 USD
+  Assets:Bank:CVB-Business-Checking      -2300.15 USD
