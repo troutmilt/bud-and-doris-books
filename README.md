@@ -13,6 +13,17 @@ fava main.beancount                  # http://localhost:5000
 python scripts/schedule_f.py main.beancount 2026
 ```
 
+## Opening the books (Linux)
+
+From anywhere:
+
+```bash
+~/Documents/budanddorisfarms/bud-and-doris-books/books.sh
+```
+
+It pulls the latest entries from GitHub, sets up the Python tools on first run,
+checks that the books balance, and opens Fava in your browser. Ctrl+C stops it.
+
 ## Adding entries
 
 Send Claude a receipt photo or a description ("$42 of drip line at the co-op,
